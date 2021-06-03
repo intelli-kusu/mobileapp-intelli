@@ -431,23 +431,19 @@ public class VideoChatActivity extends BaseActivity {
 
     public void onLocalAudioMuteClicked(View view) {
         mMuted = !mMuted;
-        // Stops/Resumes sending the local audio stream.
         mRtcEngine.muteLocalAudioStream(mMuted);
-//        mRtcEngine.setDefaultAudioRoutetoSpeakerphone(mLoudSpeakerEnabled);
         int res = mMuted ? R.drawable.ic_mic_off : R.drawable.ic_mic_on;
         binding.btnMute.setImageResource(res);
     }
 
     public void onLoudSpeakerClicked(View view) {
         mLoudSpeakerEnabled = !mLoudSpeakerEnabled;
-//        mRtcEngine.setDefaultAudioRoutetoSpeakerphone(mLoudSpeakerEnabled);
         mRtcEngine.setEnableSpeakerphone(mLoudSpeakerEnabled);
         int res = mLoudSpeakerEnabled ? R.drawable.ic_speaker_on : R.drawable.ic_speaker_off;
         binding.btnLoudSpeaker.setImageResource(res);
     }
 
     public void onSwitchCameraClicked(View view) {
-        // Switches between front and rear cameras.
         mRtcEngine.switchCamera();
     }
 
@@ -468,13 +464,6 @@ public class VideoChatActivity extends BaseActivity {
     public void onVideoIconClicked(View view) {
         Log.e(TAG, "onVideoIconClicked");
         if (mVideoPaused) { //already paused
-
-            /*if(!isLocalVideoSetup) {
-                isLocalVideoSetup = true;
-                setupLocalVideo();
-            }*/
-
-
             Log.e(TAG, "mVideoPaused true");
             mVideoPaused = false;
             binding.btnVideo.setImageResource(R.drawable.ic_camera_on);
@@ -486,21 +475,6 @@ public class VideoChatActivity extends BaseActivity {
             binding.btnVideo.setImageResource(R.drawable.ic_camera_off);
             pauseLocalVideo();
         }
-    }
-
-    //video camera pause/resume logic for POC
-    public void onVideoIconClickedPOC(View view) {
-        if (mVideoPaused) { //already paused
-            binding.frameLocalVideo.setBackgroundResource(R.drawable.img_pat);
-            mVideoPaused = false;
-            binding.btnVideo.setImageResource(R.drawable.ic_cameraon);
-        } else { //in resume
-            binding.frameLocalVideo.setBackgroundColor(getResources().getColor(R.color.light_grey));
-            mVideoPaused = true;
-            binding.btnVideo.setImageResource(R.drawable.ic_cameraoff);
-        }
-
-//        showButtons(!mCallEnd);
     }
 
     private void showButtons(boolean show) {
@@ -567,7 +541,6 @@ public class VideoChatActivity extends BaseActivity {
 
     private void pauseLocalVideo() {
         if (mRtcEngine != null) {
-//            mRtcEngine.enableLocalVideo(false);
             mRtcEngine.muteLocalVideoStream(true);
         }
         binding.localImageOnPause.setVisibility(View.VISIBLE);
@@ -575,7 +548,6 @@ public class VideoChatActivity extends BaseActivity {
 
     private void resumeLocalVideo() {
         if (mRtcEngine != null) {
-//            mRtcEngine.enableLocalVideo(true);
             mRtcEngine.muteLocalVideoStream(false);
         }
         binding.localImageOnPause.setVisibility(View.GONE);
