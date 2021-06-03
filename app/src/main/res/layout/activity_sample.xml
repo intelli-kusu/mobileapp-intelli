@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"/>
+
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin_to_logo"
+            android:textColor="@color/primary"
+            android:visibility="gone"
+            tools:text="Sub heading" />
+
+        <TextView
+            style="@style/LoginLabelTextStyle"
+            android:text="@string/enter_first_name"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etFirstName"
+            style="@style/LoginEditTextStyle"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/LoginLabelTextStyle"
+            android:text="@string/enter_last_name"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etLastName"
+            style="@style/LoginEditTextStyle"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:visibility="gone"/>
+
+
+        <TextView
+            style="@style/LoginLabelTextStyle"
+            android:text="@string/enter_mobile_phone_number"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            style="@style/LoginEditTextStyle"
+            android:digits="0123456789()-"
+            android:hint="@string/hint_phone_number_format_1"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:maxLines="1" />
+
+        <mk.webfactory.dz.maskededittext.MaskedEditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Date"
+            android:inputType="text"
+            app:maskededittext_enforceMaskLength="true"
+            app:maskededittext_mask="##/##/####"
+            app:maskededittext_maskCharacter="#"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/etDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Date"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnGetOTP"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/label_to_label_margin_login"
+            android:enabled="true"
+            android:padding="@dimen/primary_button_padding"
+            android:text="@string/btn_continue"
+            android:textAllCaps="false"
+            android:textSize="@dimen/primary_button_text_size" />
+    </LinearLayout>
+</ScrollView>

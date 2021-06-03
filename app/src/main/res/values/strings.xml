@@ -1,0 +1,282 @@
+<resources>
+    <!-- App Related -->
+    <string name="app_name" translatable="false">IntelliCare</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="copy_rights" translatable="false">&#169; 2021, IntelliCare Medical Group</string>
+    <!-- Login Page -->
+    <string name="login_heading" translatable="false">Welcome to Intellicare</string>
+    <string name="enter_first_name">First name</string>
+    <string name="enter_last_name">Last name</string>
+    <string name="select_date_of_birth">Date of birth</string>
+    <string name="enter_mobile_phone_number">Mobile phone number</string>
+    <string name="btn_continue">Continue</string>
+    <string name="hint_dob2_mm_dd_yyyy" translatable="false">MM/DD/YYYY</string>
+    <string name="hint_phone_number_format_1" translatable="false">(123) 456-7890</string>
+
+
+    <string name="have_you_received_a_verification_code" translatable="false">Have you received a verification code?</string>
+    <string name="we_have_sent_you_an_sms_with_a_code_to" translatable="false">We have sent you an SMS with a code to </string>
+    <string name="enter_5_digits_code">Enter 5 digits code</string>
+    <string name="resend_code"><u>Resend Code</u></string>
+    <string name="change_mobile_phone_number" translatable="false">Change Mobile Phone Number</string>
+    <string name="change_mobile_number"><u>Change mobile number</u></string>
+
+
+    <string name="register_with_us" translatable="false">Register with us</string>
+    <string name="user_form_sub_heading">Please complete the following information before you can create a virtual visit.</string>
+    <string name="registration_heading">Registration for New Patient</string>
+    <string name="fields_note">Fields marked with an <font color='#FF4455'>*</font> are required.</string>
+    <string name="fields_error_note">Please provide all the fields marked with an (<font color='#FF4455'>*</font>).</string>
+    <string name="first_name">First name</string>
+    <string name="first_name_star">First name <font color='#FF4455'>*</font></string>
+    <string name="middle_name">Middle name</string>
+    <string name="middle_name_star">Middle name <font color='#FF4455'>*</font></string>
+    <string name="last_name">Last name</string>
+    <string name="last_name_star">Last name <font color='#FF4455'>*</font></string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="date_of_birth_star">Date of birth <font color='#FF4455'>*</font></string>
+    <string name="select_gender">Gender</string>
+    <string name="select_gender_star">Gender <font color='#FF4455'>*</font></string>
+    <string name="mobile_phone">Mobile phone number</string>
+    <string name="mobile_phone_star">Mobile phone number <font color='#FF4455'>*</font></string>
+    <string name="email">Email</string>
+    <string name="email_star">Email <font color='#FF4455'>*</font></string>
+    <string name="agree_to_intellicare_legal_terms">I agree to Intellicare Legal Terms </string>
+    <string name="agree_to_hipaa_terms">I agree to HIPAA Terms </string>
+    <string name="insurance_card_photo">Insurance card front</string>
+    <string name="insurance_card_photo_star">Insurance card front <font color='#FF4455'>*</font></string>
+    <string name="insurance_card_photo_back">Insurance card back</string>
+    <string name="insurance_card_photo_back_star">Insurance card back <font color='#FF4455'>*</font></string>
+    <string name="driving_license_photo">Driving license</string>
+    <string name="driving_license_photo_star">Driving license <font color='#FF4455'>*</font></string>
+    <string name="current_medication_photo">Current medication</string>
+    <string name="current_medication_photo_star">Current medication <font color='#FF4455'>*</font></string>
+    <string name="official_photo">Official photo ID</string>
+    <string name="official_photo_star">Official photo ID <font color='#FF4455'>*</font></string>
+    <string name="nearest_pharmacy">Nearest Pharmacy <font color='#FF4455'>*</font></string>
+
+
+    <string name="enter_otp" translatable="false">Enter OTP sent to </string>
+
+
+    <string name="verify" translatable="false">Verify</string>
+
+    <string name="submit">Submit</string>
+    <string name="start" translatable="false">Start</string>
+    <string name="ten_nines" translatable="false">9999999999</string>
+    <string name="five_zeros" translatable="false">00000</string>
+    <string name="random_phone" translatable="false">9876543210</string>
+    <string name="enter_last_name_of_primary" translatable="false">Enter Last Name of Primary Member:</string>
+
+    <string name="select_date_of_birth_mmddyyyy" translatable="false">Select Date Of Birth (MM-DD-YYYY):</string>
+    <string name="dob_mm_dd_yyyy" translatable="false">MM-DD-YYYY</string>
+
+
+    <string name="date_of_birth_mm_dd_yyyy" translatable="false">Date Of Birth(MM-DD-YYYY)</string>
+
+    <string name="sorry_title" translatable="false">We are sorry!</string>
+    <string name="sorry_alert" translatable="false">System failed to verify your membership. Your information has been routed to one of our care coordinators. They are checking with your medical group and will get in touch with you shortly.
+</string>
+
+    <!-- Agora strings -->
+    <!--<string name="agora_app_id">a0db729dd13b44e7acffb4e797ac7577</string>-->
+    <string name="agora_app_id" translatable="false">f4192527912545d88918d6c3d7f9c821</string>
+    <string name="agora_access_token" translatable="false">006f4192527912545d88918d6c3d7f9c821IAC56smZVMmMmq8fdt2B5kCmavB3vY3bSWSqi2rqIebnqyD9vKcAAAAAIgCLYQAAFGEqYAQAAQCkHSlgAwCkHSlgAgCkHSlgBACkHSlg</string>
+    <string name="start_visit" translatable="false">Start Visit</string>
+    <string name="rescan_card" translatable="false"><u>Re-scan Card</u></string>
+    <string name="visit_details" translatable="false"><u>Visit Details</u></string>
+    <string name="logout">Logout</string>
+    <string name="logout_u" translatable="false"><u>Logout</u></string>
+    <string name="close" translatable="false"><u>CLOSE</u></string>
+    <string name="switch_card" translatable="false"><u>Switch Card</u></string>
+    <string name="team_care_ipa" translatable="false">Team Care IPA</string>
+    <string name="skip"><u>Skip</u></string>
+
+    <string name="phone_hint2" translatable="false">(999) 999-9999</string>
+
+
+    <string name="member_id">Member ID</string>
+    <string name="member_id_star" translatable="false">Member ID <font color='#FF4455'>*</font></string>
+
+
+    <string name="membership_card_photo" translatable="false">Membership Card Photo</string>
+    <string name="membership_card_photo_star" translatable="false">Membership Card Photo <font color='#FF4455'>*</font></string>
+
+    <string name="member_photo" translatable="false">Member Photo</string>
+    <string name="member_photo_star" translatable="false">Member Photo <font color='#FF4455'>*</font></string>
+
+    <string name="html_text_red" translatable="false">This is <font color='#FF4455'>simple</font></string>
+    <string name="html_text_blue" translatable="false">This is <font color='#4455FF'>*</font></string>
+    <string name="default_notification_channel_id" translatable="false">IntelliCare</string>
+
+    <string name="device_density" translatable="false">default</string>
+    <string name="cancel_consultation" translatable="false"><u>Cancel consultation</u> </string>
+    <string name="b_last_consultation_b_nmon_2_feb_2021_02_29pm" translatable="false"><b>Last Consultation</b>\nMon, 2 Feb 2021 02:29PM</string>
+    <string name="login_heading2">If experiencing a medical emergency, you should immediately seek emergency care by calling 911</string>
+    <string name="about_login"><u>About the service and eligibility</u></string>
+    <string name="please_check_your_message_text">Please check your message. We sent a one-time password to mobile no:</string>
+    <string name="note_otp_screen_text">Note: Repeat patients need to use their registered mobile phone number.</string>
+    <string name="chief_complaint">Chief complaint <font color='#FF4455'>*</font></string>
+    <string name="create_consultation">Create Consultation</string>
+    <string name="back">Back</string>
+
+
+    <!-- Formatted big texts-->
+    <string name="formatted_engage_visit_description_bkp" translatable="false"><![CDATA[<p></p>
+        <p style=\'margin:0in;margin-bottom:.0001pt;font-size:16px;font-family:"Calibri","sans-serif";text-align:justify;line-height:115%;\'><span style=\'font-family:"Calibri","sans-serif";color:#03356A;\'>Your wait time is shown below. The provider will send a notification when she/he is ready to see you. The button below will change to "Engage". You will then have 3 minutes to start a consult. If you miss the window, the provider will see the next patient in the queue and notify you again when she/he is ready to see you.<br /></span></p>
+        <p style=\'margin:0in;margin-bottom:.0001pt;font-size:16px;font-family:"Calibri","sans-serif";text-align:justify;line-height:115%;\'><span style=\'font-family:"Calibri","sans-serif";color:#03356A;\'><br /></span></p>
+        <p style=\'margin:0in;margin-bottom:.0001pt;font-size:16px;font-family:"Calibri","sans-serif";text-align:justify;line-height:115%;\'><span style=\'font-family:"Calibri","sans-serif";color:#03356A;\'>You may cancel this visit any time and come back later.</span></p>
+        <p style=\'margin:0in;margin-bottom:.0001pt;font-size:16px;font-family:"Calibri","sans-serif";text-align:justify;line-height:115%;\'><span style=\'font-family:"Calibri","sans-serif";color:#03356A;\'><br /></span></p>
+        <p style=\'margin:0in;margin-bottom:.0001pt;font-size:16px;font-family:"Calibri","sans-serif";text-align:justify;line-height:115%;\'><span style=\'font-family:"Calibri","sans-serif";color:#03356A;\'>When you engage with the provider, you have the option of just doing an audio-only visit. You will see the provider, but you need to opt-in for the provider to see you.<br /></span></p>
+        <p style=\'margin:0in;margin-bottom:.0001pt;font-size:16px;font-family:"Calibri","sans-serif";text-align:justify;line-height:115%;\'><span style=\'font-family:"Calibri","sans-serif";color:#03356A;\'><br /></span></p>
+        <p><span style=\'font-size:16px;font-family:"Calibri","sans-serif";color:#03356A;\'>If a medication is needed, the provider will send that to your chosen pharmacy. You can update your pharmacy using "Manage Information" below or let the provider know your closest pharmacy.</span></p>]]>
+    </string>
+
+    <string name="formatted_capture_pic_insurance_card_description_bkp" translatable="false">
+        <![CDATA[
+            <p>Capture a picture of your insurance card.</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Place card on a desk on a dark-colored surface that\'s</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;not reflective and is well lit</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Position camera directly over the card (not angled)</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Fit all four corners inside the guides</p>
+        ]]>
+    </string>
+
+    <string name="formatted_capture_pic_medication_description_bkp" translatable="false">
+        <![CDATA[
+            <p>Capture a picture of your current prescribed medications.</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Position camera directly over the medication label</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;For multiple medications, place them together when</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;capturing a picture or individually capture the image</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;of each medication</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Fit all four corners inside the guides</p>
+        ]]>
+    </string>
+
+    <string name="formatted_capture_pic_official_photo_description_bkp" translatable="false">
+        <![CDATA[
+            <p>Capture a picture of an official photo ID.</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Driver\'s license or a government-issued ID</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Students can use a school ID</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;For toddlers and infants, capture a picture</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;of their face or a photograph</p>
+            <p>&nbsp;&nbsp;&bull&nbsp;Fit all four corners inside the guides</p>
+        ]]>
+    </string>
+    <string name="add_or_update_known_allergies">Add or update known allergies</string>
+    <string name="dashboard_create_visit_subheading3">Before creating a visit, please ensure your insurance, current medications and allergy information are accurate.</string>
+    <string name="dashboard_create_visit_subheading2" translatable="false">The current wait time for a provider is approximately xx minutes.</string>
+    <string name="dashboard_create_visit_subheading1">Service is available from 6 AM to 10 PM pacific time.</string>
+    <string name="create_new_consultation">Create New Consultation</string>
+    <string name="your_consultation_will_begin_in" translatable="false">Your consultation will begin in..</string>
+    <string name="consultation_nhistory">Consultation\nHistory</string>
+    <string name="consultation_history">Consultation History</string>
+    <string name="last_consultation">Last Consultation</string>
+    <string name="manage_nyour_data">Manage Your Data</string>
+    <string name="dashboard_manage_data_button_text">Insurance Card,\nPhoto ID,\nCurrent Medication,\nAllergy</string>
+    <string name="powered_by" translatable="false">Powered by</string>
+    <string name="intellicare_health" translatable="false">Intellicare Health</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="what_is_the_complaint">What is your illness (complaint)?</string>
+    <string name="create_visit_subheading">The information below will help the provider to address your illness. If you do not have access to a thermometer or a BP meter, leave those fields information blank.</string>
+    <string name="temperature">Temperature</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="feedback_experience">Rate your consultation experience</string>
+    <string name="feedback_hint">Provide a written review</string>
+    <string name="ringer_screen_info_text">You are getting call from IntelliCare health provider. Pick up now to continue to the consultation</string>
+    <string name="past_consultations_error_msg">No past consultations found</string>
+    <string name="past_consultations_header" translatable="false">Past Consultations:</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="insurance_id_member_id">Insurance ID/Member ID</string>
+    <string name="insurance_id_member_id_star">Insurance ID/Member ID <font color='#FF4455'>*</font></string>
+    <string name="patient_relationship_to_insured">Patient Relationship to Insured</string>
+    <string name="patient_relationship_to_insured_star">Patient Relationship to Insured <font color='#FF4455'>*</font></string>
+
+    <string name="common_loader_title" translatable="false" />
+    <string name="settings">Settings</string>
+    <string name="preferred_language">Preferred Language</string>
+    <string name="english">English</string>
+    <string name="espanol">Español</string>
+    <string name="english_u"><u>English</u></string>
+    <string name="espanol_u"><u>Español</u></string>
+    <string name="telehealth_consent">Telehealth Consent</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="text_continue">Continue</string>
+    <string name="available">Available</string>
+    <string name="call_hold_message">The provider has put the call on hold as per your request. Please click the button below once you are ready to resume the call</string>
+    <string name="call_hold_message2">The session is on hold. The provider can resume the session only when the slider below is set to "I'm here"</string>
+
+    <!-- New strings-->
+    <string name="login_welcome_desc">Welcome to Intellicare Health app – a virtual care service provided by your Medical Group. This added service allows you to access a team of providers that you consult with via an audio or video session for all urgent care, questions regarding your health, or prescription refill. This service comes at no additional cost to you. Health professionals will be at your service from 6:00 a.m. at 10 p.m., Pacific time, every day of the week except Wednesdays.</string>
+    <string name="otp_resend_note">OTP has been successfully re-sent to\n</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="feedback_success">Feedback submitted successfully</string>
+    <string name="feedback_empty_message">Please provide feedback</string>
+    <string name="logout_message">Logged out successfully</string>
+    <string name="allergy_search_hint">Search chief complaint</string>
+    <string name="minutes_text">Minutes</string>
+    <string name="hi_text">Hi</string>
+    <string name="consultation_begin_note">Your consultation will begin in..</string>
+    <string name="warning_text">Warning!</string>
+    <string name="consult_cancellation_warning_text">Do you want to cancel the consultation?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="start_text">START</string>
+    <string name="provider_ready_message">The provider is ready</string>
+    <string name="cancel_consultation_success_message">Consultation cancelled successfully</string>
+    <string name="exit_app_warning_message">Do you want to exit the application?</string>
+    <string name="exit_text">EXIT</string>
+    <string name="cancel_text">CANCEL</string>
+    <string name="engage_text">ENGAGE</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="image_picker_title">Choose Image</string>
+    <string name="select_severity" translatable="false">Select Severity</string>
+    <string name="video_call_exit_warning">Do you want to exit the video consultation?</string>
+    <string name="pharmacy_search_hint">Search pharmacy by zip code</string>
+    <string name="away">Away</string>
+    <string name="im_here">"I'm here"</string>
+
+
+    <string name="about_text">
+        <b>About Intellicare Service and Eligibility</b>
+        \n\nPatients can now get extended access to care at the comfort of their home, office, or wherever you are through the Intellicare app. Your medical group offers this service for its members\' convenience at no additional cost to the patient. The fact that you have downloaded this app, you probably were directed to do so via text message or email, or by your primary doctor\'s office. If your medical group has not offered this service, check with the primary care physician or their office to sign up for the Intellicare service.  Alternatively, have an Intellicare staff check for your eligibility.  Click here to provide us the name of your group.
+        \n\n<b>When would you use this virtual service?</b>
+        \nIf you think you\'re experiencing a medical emergency or a bodily injury, you should immediately seek emergency care by calling 911. Additionally, if you need to see your doctor for specific issues, you should contact your doctor\'s officeFor most other non-critical illnesses (such as fever, cold, cough, rash, depression, and bodily aches), medication refill, therapeutic sessions, or medical questions, you can use this service.
+        \n\n<b>My doctor\'s offices asked me to use this service. How do I get started?</b>
+        \nIf using the app for the first time, log in as directed. You must use your primary mobile number when logging in. This number is used for authentication and verified with a one-time password every time you log in. To ensure the provider has crucial information about the patient, you will need to enrol. Have your insurance card, a photo ID, and current medications. The app will walk you through a short but quick registration process. You can also reach out to our care coordinators to help you through this process. Once you have completed registration, the care coordinator will verify your insurance/medical group for eligibility.
+        \n\n<b>What do I need to do to get care after I have registered?</b>
+        \nOnce the registration is complete, you can initiate a visit from the dashboard screen. If you are a repeat patient, you need to log in by using your name, DOB and registered phone number. After the One Time Password is verified, the app will take you right into the dashboard that allows you to initiate a visit with the medical provider.
+        \n\n<b>What devices can I use to get my care?</b>
+        \nInstead of a password, Intellicare validates a patient based sending a one-time passcode to their registered mobile phone. You can use your registered smart-phone (iPhone or Android phone) to get your virtual care. Alternatively, you may also download the Intellicare Health app on an iPad or tablet device and log in from that device but enter your registered mobile phone no to receive your one-time passcode.
+        \n\n<b>Can my family use the Intellicare virtual care service?</b>
+        \nIf the insurance covers members\' dependents, they are eligible to receive virtual care. You will need to independently register each of the dependents using the Intellicare app because the provider will maintain a separate medical history for individual patients. If the dependent is an adult and has their mobile phone, they may use their mobile number when registering and continue to use that number for subsequent visits. Dependents below the age of 18 or those that do not have separate mobile can use the mobile number of the insured\'s primary member.
+        \n\n<b>Is this a 24x7 service?</b>
+        \nCurrently, providers will see you only from 6 AM to 10 PM all days of the week except Wednesdays. If you place a call outside these hours, your visit is in their queue, and the provider will call you when they are ready to see you.
+        \n\n<b>What is the wait time to see a provider?</b>
+        \nIntellicare intends to patients with minimum wait time. When a patient initiates a visit, they are in the waiting room, that and an approximate wait time is displayed. When a provider is ready to see the patient, the provider sends a 3-minute notification to the app. The patient will have 3 minutes to initiate the call. Failure to start within the time allocated will result in the provider seeing the next patient. A cycle of notification will repeat. The provider might cancel the visit after repeated tries to engage with the patient. The patient also can withdraw the visit at any time when in the waiting room.
+        \n\n<b>Do I have to turn on the video when talking to the provider?</b>
+        \nOnce connected to the provider, you will see the provider. The provider will hear you but not see you. You have the option of enabling the video, or the provider may ask you to turn on the video for insurance ID verification or for specific treatment purposes.
+</string>
+
+    <string name="formatted_engage_visit_description">Your approximate wait time is shown below. The provider will send a notification when she/he is ready to see you and the button below will change to “START”. You will then have 3 minutes to start a consult. If you miss the window, the provider will see the next patient in the queue and notify you again when she/he is ready to see you.
+        \n\nYou may cancel this visit any time and come back later.
+        \n\nWhen you engage with the provider, you have the option of just doing an audio-only visit. You will see the provider, but you need to opt-in for the provider to see you.
+        \n\nIf a medication is needed, the provider will send that to your chosen pharmacy. You can update your pharmacy using “Manage Personal Information” below or let the provider know your closest pharmacy.
+</string>
+
+    <string name="formatted_capture_pic_insurance_card_description">
+        Capture a picture of your insurance card.\n• Place card on a desk on a dark-colored surface that’s not reflective and is well lit \n• Position camera directly over the card (not angled)\n• Fit all four corners inside the guides
+    </string>
+
+    <string name="formatted_capture_pic_medication_description">
+        Capture a picture of your current prescribed medications.\n• Position camera directly over the medication label\n• For multiple medications, place them together when capturing a picture or individually capture the image of each medication\n• Fit all four corners inside the guides
+    </string>
+
+    <string name="formatted_capture_pic_official_photo_description">
+        Capture a picture of an official photo ID.\n• Driver\'s license or a government-issued ID\n• Students can use a school ID\n• For toddlers and infants, capture a picture of their face or a photograph
+    </string>
+
+</resources>

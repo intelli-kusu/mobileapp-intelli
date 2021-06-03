@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_chat_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_grey"
+    android:keepScreenOn="true"
+    tools:context=".view.videocall.VideoChatActivity">
+
+    <FrameLayout
+        android:id="@+id/frameRemoteVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/local_preview_width"
+        android:layout_height="@dimen/local_preview_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/local_preview_margin_top"
+        android:layout_marginEnd="@dimen/local_preview_margin_right">
+
+        <FrameLayout
+            android:id="@+id/frameLocalVideo"
+            android:layout_width="@dimen/local_preview_width"
+            android:layout_height="@dimen/local_preview_height" />
+
+        <ImageView
+            android:id="@+id/localImageOnPause"
+            android:layout_width="@dimen/local_preview_width"
+            android:layout_height="@dimen/local_preview_height"
+            android:background="@drawable/no_video2"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llControlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_grey"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/min_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingRight="@dimen/min_padding"
+        android:paddingBottom="@dimen/small_padding">
+
+        <ImageView
+            android:id="@+id/btnLoudSpeaker"
+            android:layout_width="@dimen/other_button_size"
+            android:layout_height="@dimen/other_button_size"
+            android:onClick="onLoudSpeakerClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_speaker_on" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnMute"
+            android:layout_width="@dimen/other_button_size"
+            android:layout_height="@dimen/other_button_size"
+            android:onClick="onLocalAudioMuteClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_mic_on" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnCall"
+            android:layout_width="@dimen/call_button_size"
+            android:layout_height="@dimen/call_button_size"
+            android:onClick="onCallClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_camera"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/btnVideo"
+            android:layout_width="@dimen/other_button_size"
+            android:layout_height="@dimen/other_button_size"
+            android:onClick="onVideoIconClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera_on" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnSwitchCamera"
+            android:layout_width="@dimen/other_button_size"
+            android:layout_height="@dimen/other_button_size"
+            android:onClick="onSwitchCameraClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_switch_camera" />
+    </LinearLayout>
+
+    <com.themahi.logger.LoggerRecyclerView
+        android:id="@+id/loggerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@id/llControlPanel"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/green"
+        android:padding="4dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llCallHoldMessageOld"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/min_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/call_hold_message"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/min_padding"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:onClick="onAvailableButtonClicked"
+            android:padding="@dimen/secondary_button_padding"
+            android:text="@string/available"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/primary_button_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCallHoldMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/min_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/call_hold_message2"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/min_padding"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/away"
+                android:onClick="onSwitchClicked"
+                android:textColor="@color/white"
+                android:textOn="@string/im_here"
+                android:theme="@style/SwitchCompatTheme"
+                app:switchPadding="@dimen/min_padding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/min_padding"
+                android:text="@string/im_here"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

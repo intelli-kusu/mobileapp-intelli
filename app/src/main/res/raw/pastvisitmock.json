@@ -1,0 +1,49 @@
+{
+  "status": "success",
+  "messages": "Visits found",
+  "total_visits": 1,
+  "total_pages": 1,
+  "current_page": "1",
+  "consults": [
+    {
+      "consult_id": "359929279",
+      "status": "waiting",
+      "created_at": "01/05/2021 12:23 pm",
+      "assigned_at": "",
+      "waiting_time_in_secs": 170972,
+      "cancelled_at": "",
+      "session_started_at": "",
+      "session_ended_at": "",
+      "session_duration_in_secs": 1610020352,
+      "consult_patient_id": 4,
+      "consult_first_name": "John",
+      "consult_last_name": "Doe",
+      "relationship": "Self",
+      "bp": "120/80",
+      "temperature": "97",
+      "consult_image": "8976a554ff98bcf36",
+      "notes": null,
+      "clinician_name": "Dr.SubbaRao"
+    },
+    {
+      "consult_id": "359929279",
+      "status": "waiting",
+      "created_at": "21/05/2021 12:23 pm",
+      "assigned_at": "",
+      "waiting_time_in_secs": 170972,
+      "cancelled_at": "",
+      "session_started_at": "",
+      "session_ended_at": "",
+      "session_duration_in_secs": 1610020352,
+      "consult_patient_id": 4,
+      "consult_first_name": "Joe",
+      "consult_last_name": "Don",
+      "relationship": "Self",
+      "bp": "120/80",
+      "temperature": "97",
+      "consult_image": "8976a554ff98bcf36",
+      "notes": null,
+      "clinician_name": "Dr.LingaRao"
+    }
+  ]
+}

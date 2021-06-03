@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <!-- normal usage colors -->
+    <color name="black">#000000</color>
+    <color name="very_dark_grey">#222222</color>
+    <color name="dark_grey">#444444</color>
+    <color name="grey">#808080</color>
+    <color name="light_grey">#CCCCCC</color>
+    <color name="very_light_grey">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Theme colors -->
+    <color name="primary">#08376B</color>
+    <color name="primary_dark">#08376B</color>
+    <color name="accent">#FFFFFFFF</color>
+    <color name="secondary">#08376B</color>
+    <color name="secondary_dark">#08376B</color>
+    <color name="secondary_accent">#08376B</color>
+    <color name="intelli_pale_green">#998822</color>
+    <color name="intelli_visit_green">#385723</color>
+    <color name="black_overlay">#66000000</color>
+    <!--    Agora colors-->
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+
+    <!-- login -->
+    <color name="green">#27AE60</color>
+    <color name="light_red">#AA2222</color>
+    <color name="very_light_red">#ffab73</color>
+
+
+    <!-- Image Picker colors  -->
+    <color name="ucrop_color_toolbar">@color/teal_200</color>
+    <color name="ucrop_color_statusbar">@color/teal_700</color>
+    <color name="ucrop_color_widget_active">@color/teal_200</color>
+
+
+    <!-- CustomText colors-->
+    <color name="focused_text_color">@color/primary</color>
+    <color name="pressed_text_color">@color/grey</color>
+    <color name="disabled_text_color">@color/grey</color>
+    <color name="default_text_color">@color/primary</color>
+
+</resources>

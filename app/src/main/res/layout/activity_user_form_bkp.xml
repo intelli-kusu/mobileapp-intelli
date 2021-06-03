@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.form.UserFormActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_intelli_logo_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/main_padding"
+            android:paddingTop="4dp"
+            android:paddingRight="@dimen/main_padding"
+            android:paddingBottom="@dimen/main_padding">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_to_logo"
+                android:text="@string/register_with_us"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/heading_text_size_login"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_to_logo"
+                android:text="Note: All the fields marked with (*) are required."
+                android:textColor="@color/primary"
+                android:textStyle="normal" />
+
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/top_margin_to_logo"
+                android:visibility="visible"
+                android:background="@color/primary">
+
+                <ImageView
+                    android:id="@+id/ivMemberPhoto"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/ic_cam_edit"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/overlay_img" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvEditImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/small_padding"
+                android:text="Edit"
+                android:visibility="visible"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/tvMemberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_to_logo"
+                android:text="@string/member_id"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etMemberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit_bg"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/first_name" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                style="@style/LoginEditTextStyle"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvMiddleName"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/middle_name" />
+
+            <EditText
+                android:id="@+id/etMiddleName"
+                style="@style/LoginEditTextStyle"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvLastName"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/last_name_star" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                style="@style/LoginEditTextStyle"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvDOB"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/date_of_birth_star" />
+
+            <EditText
+                android:id="@+id/etDOB"
+                style="@style/LoginEditTextStyle"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:maxLength="10"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/select_gender" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:minHeight="0dp"
+                    android:text="Male"
+                    android:textColor="@color/primary" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/min_padding"
+                    android:minHeight="0dp"
+                    android:text="Female"
+                    android:textColor="@color/primary" />
+
+                <RadioButton
+                    android:id="@+id/rbOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/min_padding"
+                    android:minHeight="0dp"
+                    android:text="Other"
+                    android:textColor="@color/primary" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvMobile"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/mobile_phone" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                style="@style/LoginEditTextStyle"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/LoginEditTextStyle"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvSubHeading2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sub_heading2_margin"
+                android:layout_marginBottom="@dimen/sub_heading2_margin"
+                android:textColor="@color/primary"
+                android:textStyle="normal"
+                tools:text="Note: All the fields marked with (*) are required." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_to_label_margin_login"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInsuranceCardPhoto"
+                        style="@style/LoginLabelTextStyle"
+                        android:text="@string/insurance_card_photo_star" />
+
+                    <ImageView
+                        android:id="@+id/ivInsuranceCardPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/button_bg"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_cam2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInsuranceCardPhotoBack"
+                        style="@style/LoginLabelTextStyle"
+                        android:text="@string/insurance_card_photo_back_star" />
+
+                    <ImageView
+                        android:id="@+id/ivInsuranceCardPhotoBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/button_bg"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_cam2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_to_label_margin_login"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMedicationPhoto"
+                        style="@style/LoginLabelTextStyle"
+                        android:text="@string/current_medication_photo_star" />
+
+                    <ImageView
+                        android:id="@+id/ivMedicationPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/button_bg"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_cam2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDLPhoto"
+                        style="@style/LoginLabelTextStyle"
+                        android:text="@string/driving_license_photo_star" />
+
+                    <ImageView
+                        android:id="@+id/ivDLPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/button_bg"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_cam2" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/cbLegalTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="80dp"
+                android:buttonTint="@color/primary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/agree_to_intellicare_legal_terms"
+                android:textColor="@color/primary"
+                android:textColorLink="@color/primary"
+                android:textStyle="normal" />
+
+            <CheckBox
+                android:id="@+id/cbHipaaTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="0dp"
+                android:buttonTint="@color/primary"
+                android:text="@string/agree_to_hipaa_terms"
+                android:textColor="@color/primary"
+                android:textColorLink="@color/primary"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/AppTheme.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_to_label_margin_login"
+                android:enabled="true"
+                android:padding="@dimen/primary_button_padding"
+                android:text="@string/btn_continue"
+                android:textAllCaps="false"
+                android:textSize="@dimen/primary_button_text_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

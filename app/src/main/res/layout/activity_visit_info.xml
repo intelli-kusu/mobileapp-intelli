@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".view.visit.VisitInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_intelli_logo_normal" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/back_icon_size"
+            android:layout_height="@dimen/back_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_back_ios" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_to_logo"
+        android:background="@color/light_grey"
+        android:padding="8dp"
+        android:text="Consultation Details: "
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <TextView
+                android:id="@+id/consultationId"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultation ID: " />
+
+            <TextView
+                android:id="@+id/dateTime"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visit Time: " />
+
+            <TextView
+                android:id="@+id/clinician"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clinician Name: " />
+
+
+            <TextView
+                android:id="@+id/consultCreatedAt"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consult Created At: " />
+
+            <TextView
+                android:id="@+id/consultAssignedAt"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consult Assigned At: " />
+
+            <TextView
+                android:id="@+id/waitingTime"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waiting Time: " />
+
+            <TextView
+                android:id="@+id/sessionStartedAt"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Session Started At: " />
+
+            <TextView
+                android:id="@+id/sessionEndedAt"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Session Ended At: " />
+
+            <TextView
+                android:id="@+id/sessionDuration"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Session Duration: " />
+
+            <TextView
+                android:id="@+id/patientId"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient ID: " />
+
+            <TextView
+                android:id="@+id/patientName"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patinet Name: " />
+
+            <TextView
+                android:id="@+id/relation"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient Relationship: " />
+
+            <TextView
+                android:id="@+id/bp"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient BP (mmHg): " />
+
+            <TextView
+                android:id="@+id/temperature"
+                style="@style/VisitInfoTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient Temperature (°F): " />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

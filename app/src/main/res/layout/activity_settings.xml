@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".view.settings.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_intelli_logo_normal" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/back_icon_size"
+            android:layout_height="@dimen/back_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_back_ios"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvUserWelcomeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/sub_heading2_margin"
+        android:layout_marginBottom="@dimen/min_padding"
+        android:text="@string/settings"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/LoginLabelTextStyle"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:text="@string/preferred_language" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@color/primary" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/rbEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:backgroundTint="@android:color/transparent"
+            android:layoutDirection="rtl"
+            android:minHeight="0dp"
+            android:text="@string/english"
+            android:textColor="@color/primary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/rbEspanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:backgroundTint="@android:color/transparent"
+            android:layoutDirection="rtl"
+            android:minHeight="0dp"
+            android:text="@string/espanol"
+            android:textColor="@color/primary" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary" />
+
+    <TextView
+        android:id="@+id/tvHealthConsent"
+        style="@style/LoginLabelTextStyle"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:text="@string/telehealth_consent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:background="@color/primary" />
+
+    <TextView
+        android:id="@+id/tvTermsAndConditions"
+        style="@style/LoginLabelTextStyle"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:text="@string/terms_and_conditions" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:background="@color/primary" />
+
+    <TextView
+        android:id="@+id/tvContactUs"
+        style="@style/LoginLabelTextStyle"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:text="@string/contact_us" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:background="@color/primary" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        style="@style/LoginLabelTextStyle"
+        android:layout_marginLeft="@dimen/settings_margin"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:text="@string/logout"
+        android:textColor="@color/light_red" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:background="@color/primary" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/settings_margin"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/min_padding"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:padding="@dimen/secondary_button_padding"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/primary_button_text_size" />
+
+</LinearLayout>

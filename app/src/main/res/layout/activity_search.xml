@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.search.SearchActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <ListView
+        android:id="@+id/lvComplaints"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/dark_grey"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/min_padding"
+        android:layout_marginTop="@dimen/button_to_button_margin"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:padding="@dimen/secondary_button_padding"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/primary_button_text_size" />
+
+</LinearLayout>
+

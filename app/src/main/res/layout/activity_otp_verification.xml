@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".view.login.OTPVerificationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_intelli_logo_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/main_padding"
+            android:paddingRight="@dimen/main_padding"
+            android:paddingBottom="@dimen/main_padding">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_to_logo"
+                android:text="@string/please_check_your_message_text"
+                android:textColor="@color/primary"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvSubHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_to_logo"
+                android:text="@string/note_otp_screen_text"
+                android:textColor="@color/primary"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/btnChangePhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/button_to_button_margin"
+                android:gravity="center"
+                android:text="@string/change_mobile_number"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/primary_button_text_size"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                style="@style/LoginLabelTextStyle"
+                android:text="@string/enter_5_digits_code" />
+
+            <EditText
+                android:id="@+id/etOTP"
+                style="@style/LoginEditTextStyle"
+                android:hint="@string/five_zeros"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:id="@+id/tvResendOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_to_label_margin_login"
+                android:text="@string/resend_code"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btnVerifyOTP"
+                style="@style/AppTheme.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_to_label_margin_login"
+                android:enabled="false"
+                android:padding="@dimen/primary_button_padding"
+                android:text="@string/btn_continue"
+                android:textAllCaps="false"
+                android:textSize="@dimen/primary_button_text_size" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

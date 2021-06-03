@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/label_text_size_login"
+        android:textStyle="normal"
+        tools:text="Penicillin" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/severitySpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:background="@drawable/edit_bg"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:theme="@style/MySpinnerItemStyle"
+        android:visibility="visible" />
+</LinearLayout>

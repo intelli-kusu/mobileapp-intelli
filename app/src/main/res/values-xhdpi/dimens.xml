@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="local_preview_width">84dp</dimen>
+    <dimen name="local_preview_height">125dp</dimen>
+    <dimen name="local_back_icon_size">50dp</dimen>
+    <dimen name="remote_back_icon_size">100dp</dimen>
+    <dimen name="remote_back_icon_margin_bottom">90dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="control_bottom_margin">16dp</dimen>
+    <dimen name="control_bottom_horizontal_margin">30dp</dimen>
+    <dimen name="label_text_size_login">13sp</dimen>
+    <dimen name="heading_text_size_login">16sp</dimen>
+    <dimen name="primary_button_text_size">16sp</dimen>
+    <dimen name="dashboard_view_item_height">160dp</dimen>
+    <item name="spinner_text_size" type="dimen" format="float">13.0</item>
+
+
+</resources>
