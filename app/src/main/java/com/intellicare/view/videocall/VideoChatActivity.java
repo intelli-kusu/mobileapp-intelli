@@ -62,16 +62,8 @@ public class VideoChatActivity extends BaseActivity {
     private boolean mVideoPaused = false;
     private boolean mLoudSpeakerEnabled = true;
 
-    //    private FrameLayout mFrameLocalVideo;
-//    private FrameLayout mFrameRemoteVideo;
     private VideoCanvas mLocalVideoCanvas;
     private VideoCanvas mRemoteVideoCanvas;
-    //    private ImageView btnCall;
-//    private ImageView btnMute;
-//    private ImageView btnLoudSpeaker;
-//    private ImageView btnSwitchCamera;
-//    private ImageView btnVideo;
-//    private ImageView localImageOnPause;
     private String agoraChannel = "";
     private String agoraAuthToken = "";
     private boolean isFromFCM;
